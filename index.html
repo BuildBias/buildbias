@@ -1,66 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-627PP9YTQK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-627PP9YTQK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-627PP9YTQK');
+  </script>
 
-  gtag('config', 'G-627PP9YTQK');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>buildbias.ai</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #000;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-        .bold-text {
-            font-weight: bold;
-        }
-        .italic-text {
-            font-style: italic;
-        }
-        a {
-            color: #0000EE;
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildBias</title>
+  <meta name="description" content="BuildBias is a group of curious hackers. We build products we find interesting.">
+  <link rel="canonical" href="https://buildbias.ai/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buildbias.ai/">
+  <meta property="og:title" content="BuildBias">
+  <meta property="og:description" content="Curious hackers building products we find interesting.">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Menlo,monospace' font-size='22' font-weight='700' fill='%23fff'%3EB%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --fg: #000;
+      --bg: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #fff;
+        --bg: #000;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: var(--bg); }
+
+    body {
+      font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 18vh 16px 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .intro { max-width: 32rem; }
+
+    section { margin-top: 64px; }
+
+    h2 {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--fg);
+    }
+
+    ul { list-style: none; }
+
+    li {
+      display: flex;
+      gap: 24px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--fg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover {
+      background: var(--fg);
+      color: var(--bg);
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--fg);
+      outline-offset: 2px;
+    }
+
+    .contact { padding-top: 12px; }
+  </style>
 </head>
 <body>
+  <main>
+    <h1>BuildBias</h1>
+    <p class="intro">A group of curious hackers. We build products we find interesting.</p>
 
-    <h1>buildbias.ai</h1>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <!-- Replace with: <li><span>01</span><a href="https://github.com/ORG/REPO">repo-name</a></li> -->
+        <li><span>01</span><span>Coming soon</span></li>
+        <li><span>02</span><span>Coming soon</span></li>
+      </ul>
+    </section>
 
-    <h2>About</h2>
-
-    <p>AI bias refers to systematic, repeatable errors in a computer system that create unfair outcomes. This usually happens when an algorithm privileges one category of data or people over another. Understanding AI bias requires looking at how it happens, how it shows up, and why it is so difficult to eliminate.</p>
-
-    <p>An AI model learns patterns from data. If those patterns are flawed, the AI copies and amplifies those flaws.</p>
-
-    <p class="bold-text">BuildBias just figured out a way to control that.</p>
-
-    <p>Buildbias currently works with up to 5 companies per month. You can join our waitlist by sending us an <a href="mailto:hi@buildbias.ai">email</a> and tell us more about your business and we will reach out.</p>
-
-    <p class="italic-text">Being number one in search results is temporary, but existing in the training data is forever.</p>
-
+    <section>
+      <h2>Contact</h2>
+      <p class="contact"><a href="mailto:hi@buildbias.ai">hi@buildbias.ai</a></p>
+    </section>
+  </main>
 </body>
 </html>
