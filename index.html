@@ -98,6 +98,13 @@
       outline-offset: 2px;
     }
 
+    .desc { margin-left: auto; text-align: right; }
+
+    @media (max-width: 520px) {
+      li { flex-wrap: wrap; row-gap: 2px; }
+      .desc { flex-basis: 100%; margin-left: 0; padding-left: calc(2ch + 24px); text-align: left; }
+    }
+
     .contact { padding-top: 12px; }
   </style>
 </head>
@@ -109,8 +116,7 @@
     <section>
       <h2>Projects</h2>
       <ul>
-        <!-- When public, link it: <li><span>01</span><a href="https://github.com/BuildBias/toki">Toki</a></li> -->
-        <li><span>01</span><span>Toki</span></li>
+        <li><span>01</span><a href="https://github.com/BuildBias/toki">Toki</a><span class="desc">Token-efficient Claude Code plugin</span></li>
         <li><span>02</span><span>Coming soon</span></li>
       </ul>
     </section>
