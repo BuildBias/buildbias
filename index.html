@@ -13,13 +13,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BuildBias</title>
-  <meta name="description" content="BuildBias is an independent software lab. We design, build and operate our own products.">
+  <meta name="description" content="BuildBias is an independent software lab. We build products, systems and agent skills.">
   <link rel="canonical" href="https://buildbias.ai/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://buildbias.ai/">
   <meta property="og:title" content="BuildBias">
-  <meta property="og:description" content="An independent software lab. We design, build and operate our own products.">
+  <meta property="og:description" content="An independent software lab. We build products, systems and agent skills.">
   <meta name="twitter:card" content="summary">
 
   <meta name="color-scheme" content="dark">
@@ -104,7 +104,7 @@
 <body>
   <main>
     <h1>BuildBias</h1>
-    <p class="intro">An independent software lab.<br>We design, build and operate our own products.</p>
+    <p class="intro">An independent software lab.<br>We build products, systems and agent skills.</p>
 
     <section>
       <h2>Projects</h2>
@@ -117,8 +117,18 @@
 
     <section>
       <h2>Contact</h2>
-      <p class="contact"><a href="mailto:hi@buildbias.ai">hi@buildbias.ai</a></p>
+      <p class="contact"><a id="email">hi [at] buildbias.ai</a></p>
     </section>
   </main>
+
+  <script>
+    // Assemble the address in the browser so it never appears in the page source.
+    (function () {
+      var a = document.getElementById('email');
+      var addr = ['hi', 'buildbias.ai'].join('\x40');
+      a.href = 'mail' + 'to:' + addr;
+      a.textContent = addr;
+    })();
+  </script>
 </body>
 </html>
